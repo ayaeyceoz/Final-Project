@@ -14,3 +14,6 @@ C:\Users\User 1\source\repos\Force\Force\obj\Debug\Force.Hallway.resources
 C:\Users\User 1\source\repos\Force\Force\obj\Debug\Force.TugOfWar.resources
 C:\Users\User 1\source\repos\Force\Force\obj\Debug\Force.ToW2.resources
 C:\Users\User 1\source\repos\Force\Force\obj\Debug\Force.Protect.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.csprojResolveAssemblyReference.cache
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.exe
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.pdb
