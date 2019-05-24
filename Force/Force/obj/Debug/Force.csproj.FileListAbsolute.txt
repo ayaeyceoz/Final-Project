@@ -20,3 +20,16 @@ C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.pdb
 C:\Users\AmeliaBallingall21\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.csprojAssemblyReference.cache
 C:\Users\AmeliaBallingall21\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.exe
 C:\Users\AmeliaBallingall21\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.pdb
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.mgAvoid.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.Hallway.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.frmMainMenu.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.Maze.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.Properties.Resources.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.Protect.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.ToW2.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.TugOfWar.resources
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.csproj.GenerateResource.Cache
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\obj\Debug\Force.csproj.CoreCompileInputs.cache
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\bin\Debug\Force.exe.config
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\bin\Debug\Force.exe
+C:\Users\User 1\Documents\GitHub\Final-Project\Force\Force\bin\Debug\Force.pdb

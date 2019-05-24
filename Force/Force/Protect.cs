@@ -27,7 +27,7 @@ namespace Force
             int reset = 31; //variable to hold the position of the respawn point
             int change = 10; //variable to hold the speed of the asteroids
             hold++; //a variable to hold the time that has passed
-            if (hold %1000 == 1) //after a certain amount of time, the number of days goes up and is displayed
+            if (hold %100 == 1) //after a certain amount of time, the number of days goes up and is displayed
             {
                 days++;
                 lblDays.Text = "Days: " + days;

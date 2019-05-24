@@ -83,7 +83,7 @@ namespace Force
                     {
                         MessageBox.Show("Congratulations! You forced your son to come home for dinner in " + tries + " tries!");
                     }
-                    frmMainMenu obj4 = new FrmMainMenu();
+                    frmMainMenu obj4 = new frmMainMenu();
                     obj4.Show();
                     this.Hide();
                 }
