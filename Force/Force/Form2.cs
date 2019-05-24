@@ -40,30 +40,32 @@ namespace Force
             }
         }
 
-        int MoveMe = 15;
-        int count = 0;
-        int score = 0;
+        int MoveMe = 15; //variable to decide how fast the lasers move
+        int count = 0; //variable to hold how many times the lasers have passed (lasers dodged successfully)
+        int score = 0; //variable to hold the score of the player
         private void tmr1_Tick(object sender, EventArgs e)
         {
             tmr1.Start();
-   
+            //array of pictureboxes to hold the lasers
             PictureBox[] lasers = new PictureBox[10];
-            lasers[0] = picAvoid;
-            lasers[1] = pictureBox9;
-            lasers[2] = pictureBox11;
-            lasers[3] = pictureBox15;
-            lasers[4] = pictureBox17;
-            lasers[5] = pictureBox19;
-            lasers[6] = pictureBox23;
-            lasers[7] = pictureBox25;
-            lasers[8] = pictureBox7;
-            lasers[9] = pictureBox2;
+            lasers[0] = piclaser1;
+            lasers[1] = piclaser4;
+            lasers[2] = piclaser5;
+            lasers[3] = piclaser6;
+            lasers[4] = piclaser7;
+            lasers[5] = piclaser8;
+            lasers[6] = piclaser9;
+            lasers[7] = piclaser10;
+            lasers[8] = piclaser3;
+            lasers[9] = piclaser2;
 
+            //everytime the timer ticks, a random number picks one laser to move forward
+            //the interval of the timer is so small, the lasers will appear to be moving at the same time
             Random r = new Random();
             int pick = r.Next(0, 10);
             lasers[pick].Left = lasers[pick].Left - MoveMe;
             
-
+            //when the lasers go past the bounds of the form, they reset and the score goes up 100 points
             if (lasers[pick].Left > this.Width || lasers[pick].Left <= 0)
             {
                 lasers[pick].Left = 653;
@@ -71,6 +73,9 @@ namespace Force
                 score = score + 100;
                 lblScore.Text = "Score: " + score;
             }
+
+            //every time the number of lasers that crossed divided by 10000, the lasers will move faster
+            //as the game continues, the lasers will move faster and faster so the game will get harder
             if (count%10000 == 1)
             {
                 MoveMe++;
