@@ -87,7 +87,12 @@ namespace Force
             }
         }
 
-     
+        private void btnOut_Click(object sender, EventArgs e)
+        {
+            frmMainMenu obj3 = new frmMainMenu();
+            obj3.Show();
+            this.Hide();
+        }
     }
 }
 
