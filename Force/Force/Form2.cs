@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Force
-    //Avoid Academy: This minigame is about avoiding the lasers the stroomtroopers send at you by using the force
+    //Avoid Academy: This minigame is about avoiding the lasers the stroomtroopers send at you by using the force.
+    //Use the arrow keys to move the ship up or down. The lasers get faster as the game continues.
 {
     public partial class mgAvoid : Form
     {

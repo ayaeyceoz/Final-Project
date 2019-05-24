@@ -55,19 +55,19 @@ namespace Force
                 this.Hide();
             }            if (picChar.Bounds.IntersectsWith(mgMaze.Bounds))
             {
-                Maze obj2 = new Maze(); //goes to Mze 
+                Maze obj2 = new Maze(); //goes to Maze Mansion
                 obj2.Show();
                 this.Hide();
             }
             if (picChar.Bounds.IntersectsWith(mgToW.Bounds))
             {
-                Hallway obj5 = new Hallway();
+                Hallway obj5 = new Hallway(); //goes to the Hallway for the two different Tug of War games
                 obj5.Show();
                 this.Hide();
             }
             if (picChar.Bounds.IntersectsWith(mgProtect.Bounds))
             {
-                Protect obj52 = new Protect();
+                Protect obj52 = new Protect(); //goes to Planet Protection Pavilion 
                 obj52.Show();
                 this.Hide();
             }

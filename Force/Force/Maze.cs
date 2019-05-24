@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Force
-//Maze Mansion: This minigame is about forcing your son back home. 
+//The Maze Mansion: This minigame is about forcing your son back home. 
 {
     public partial class Maze : Form
     {
@@ -61,7 +61,7 @@ namespace Force
             barriers[20] = pictureBox20;
             barriers[21] = pictureBox21;
             barriers[22] = pictureBox22;
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 23; i++)
             {
                 if (picSon.Bounds.IntersectsWith(barriers[i].Bounds))
                 {
@@ -83,59 +83,14 @@ namespace Force
                     {
                         MessageBox.Show("Congratulations! You forced your son to come home for dinner in " + tries + " tries!");
                     }
-                    frmMainMenu obj4 = new frmMainMenu();
+                    frmMainMenu obj4 = new FrmMainMenu();
                     obj4.Show();
                     this.Hide();
-                }
-
-
-
-                for (int k = 22; i > 8; i--)
-                {
-                    if (picSon.Bounds.IntersectsWith(barriers[k].Bounds))
-                    {
-                        tries++;
-                        picSon.Left = 688;
-                        picSon.Top = 44;
-                        MessageBox.Show("You lost your son to the depths of space! Try again.");
-                        lbltries.Text = "Tries: " + tries;
-                    }
-                    if (picSon.Bounds.IntersectsWith(picChar.Bounds))
-                    {
-                        picSon.Left = 688;
-                        picSon.Top = 44;
-                        if (tries == 1)
-                        {
-                            MessageBox.Show("Congratulations! You forced your son to come home for dinner in " + tries + " try!");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Congratulations! You forced your son to come home for dinner in " + tries + " tries!");
-                        }
-                        frmMainMenu obj4 = new frmMainMenu();
-                        obj4.Show();
-                        this.Hide();
-                    }
                 }
             }
         
         }
-        int count = 0;
-      
-
-        private void timer1_Tick_1(object sender, EventArgs e)
-        {
-            timer1.Start();
-            count++;
-            if (count % 10 <= 0 || count % 10 >= 5)
-            {
-                pictureBox7.Visible = false;
-            }
-            else
-            {
-                pictureBox7.Visible = true;
-            }
-        }
+     
     }
 
 }
