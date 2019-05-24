@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Force
     //Planet Protection Pavilion: Protect your planet from asteroids using the force!
-{
+{   //move your player left and right to block the asteroids
     public partial class Protect : Form
     {
         public Protect()
@@ -18,35 +18,46 @@ namespace Force
             InitializeComponent();
             MessageBox.Show("By controlling your character with the arrow keys, use the force to repel the asteroids before they hit your planet!");
         }
-        int lives = 10;
+        int lives = 10; //variables to hold the number of lives and days
         int days = 0;
+        int hold = 0;
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             
-            int reset = 31;
-            int change = 10;
-            PictureBox[] lasers = new PictureBox[9];
-            lasers[0] = pictureBox3;
-            lasers[1] = pictureBox1;
-            lasers[2] = pictureBox2;
-            lasers[3] = pictureBox4;
-            lasers[4] = pictureBox5;
-            lasers[5] = pictureBox6;
-            lasers[6] = pictureBox7;
-            lasers[7] = pictureBox8;
-            lasers[8] = pictureBox9;
+            int reset = 31; //variable to hold the position of the respawn point
+            int change = 10; //variable to hold the speed of the asteroids
+            hold++; //a variable to hold the time that has passed
+            if (hold %1000 == 1) //after a certain amount of time, the number of days goes up and is displayed
+            {
+                days++;
+                lblDays.Text = "Days: " + days;
+            }
+
+            //an array of pictureboxes to hold the asteroids
+            PictureBox[] aster = new PictureBox[9];
+            aster[0] = ast8;
+            aster[1] = ast1;
+            aster[2] = ast9;
+            aster[3] = ast7;
+            aster[4] = ast6;
+            aster[5] = ast5;
+            aster[6] = ast4;
+            aster[7] = ast3;
+            aster[8] = ast2;
+
+            //picks a random asteroid to move each time the timer ticks
+            //interval is so small that it will appear all the asteroids are moving at the same time
             Random r = new Random();
             int move = r.Next(0, 9);
-            lasers[move].Top = lasers[move].Top + change;
+            aster[move].Top = aster[move].Top + change;
 
-            if (lasers[move].Top >= 374)
+            //every time an asteroid successfully hits, you lose a life, and it resets
+            if (aster[move].Top >= 374)
             {
                 lives--;
                 lbllives.Text = "Lives: " + lives;
-                lasers[move].Top = reset;
-                days++;
-                lblDays.Text = "Days: " + days;
-                if (lives < 1)
+                aster[move].Top = reset;
+                if (lives < 1) //when you run out of lives, the game is over
                 {
                     timer1.Stop();
                     MessageBox.Show("Your planet got destroyed after " + days + " days.");
@@ -56,10 +67,10 @@ namespace Force
                 }
             }
 
-
-            if (lasers[move].Bounds.IntersectsWith(picChar.Bounds))
+            //if the asteroid is blocked by the character, it simply resets
+            if (aster[move].Bounds.IntersectsWith(picChar.Bounds))
             {
-                lasers[move].Top = reset;
+                aster[move].Top = reset;
             }
             
         }

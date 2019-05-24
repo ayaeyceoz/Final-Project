@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hallway));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnmainmenu = new System.Windows.Forms.Button();
+            this.btn1player = new System.Windows.Forms.Button();
+            this.btn2player = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnmainmenu
             // 
-            this.button1.Location = new System.Drawing.Point(249, 391);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Return to Force Freeway!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnmainmenu.Location = new System.Drawing.Point(249, 391);
+            this.btnmainmenu.Name = "btnmainmenu";
+            this.btnmainmenu.Size = new System.Drawing.Size(174, 56);
+            this.btnmainmenu.TabIndex = 0;
+            this.btnmainmenu.Text = "Return to Force Freeway!";
+            this.btnmainmenu.UseVisualStyleBackColor = true;
+            this.btnmainmenu.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn1player
             // 
-            this.button2.Location = new System.Drawing.Point(29, 183);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "1 Player";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn1player.Location = new System.Drawing.Point(29, 183);
+            this.btn1player.Name = "btn1player";
+            this.btn1player.Size = new System.Drawing.Size(85, 37);
+            this.btn1player.TabIndex = 1;
+            this.btn1player.Text = "1 Player";
+            this.btn1player.UseVisualStyleBackColor = true;
+            this.btn1player.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn2player
             // 
-            this.button3.Location = new System.Drawing.Point(542, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 37);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "2 Player";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn2player.Location = new System.Drawing.Point(542, 183);
+            this.btn2player.Name = "btn2player";
+            this.btn2player.Size = new System.Drawing.Size(85, 37);
+            this.btn2player.TabIndex = 2;
+            this.btn2player.Text = "2 Player";
+            this.btn2player.UseVisualStyleBackColor = true;
+            this.btn2player.Click += new System.EventHandler(this.button3_Click);
             // 
             // Hallway
             // 
@@ -71,9 +71,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(657, 458);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn2player);
+            this.Controls.Add(this.btn1player);
+            this.Controls.Add(this.btnmainmenu);
             this.Name = "Hallway";
             this.Text = "Hallway";
             this.ResumeLayout(false);
@@ -82,8 +82,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnmainmenu;
+        private System.Windows.Forms.Button btn1player;
+        private System.Windows.Forms.Button btn2player;
     }
 }
