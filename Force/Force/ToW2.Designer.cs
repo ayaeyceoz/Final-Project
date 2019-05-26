@@ -28,25 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToW2));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.picVoid = new System.Windows.Forms.PictureBox();
             this.picRope = new System.Windows.Forms.PictureBox();
             this.picCharR = new System.Windows.Forms.PictureBox();
             this.picCharL = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblP1 = new System.Windows.Forms.Label();
+            this.lblP2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picVoid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRope)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharL)).BeginInit();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // picVoid
             // 
@@ -91,27 +84,27 @@
             this.picCharL.TabIndex = 4;
             this.picCharL.TabStop = false;
             // 
-            // label1
+            // lblP1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 38);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Player 1: A";
+            this.lblP1.AutoSize = true;
+            this.lblP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblP1.ForeColor = System.Drawing.Color.White;
+            this.lblP1.Location = new System.Drawing.Point(45, 57);
+            this.lblP1.Name = "lblP1";
+            this.lblP1.Size = new System.Drawing.Size(188, 38);
+            this.lblP1.TabIndex = 8;
+            this.lblP1.Text = "Player 1: A";
             // 
-            // label2
+            // lblP2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(371, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 38);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Player 2: L";
+            this.lblP2.AutoSize = true;
+            this.lblP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblP2.ForeColor = System.Drawing.Color.White;
+            this.lblP2.Location = new System.Drawing.Point(371, 57);
+            this.lblP2.Name = "lblP2";
+            this.lblP2.Size = new System.Drawing.Size(184, 38);
+            this.lblP2.TabIndex = 9;
+            this.lblP2.Text = "Player 2: L";
             // 
             // ToW2
             // 
@@ -123,12 +116,12 @@
             this.ClientSize = new System.Drawing.Size(652, 451);
             this.Controls.Add(this.picCharR);
             this.Controls.Add(this.picCharL);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblP2);
+            this.Controls.Add(this.lblP1);
             this.Controls.Add(this.picVoid);
             this.Controls.Add(this.picRope);
             this.Name = "ToW2";
-            this.Text = "ToW2";
+            this.Text = "Tug of War 2 Player! Good luck :)";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ToW2_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.picVoid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRope)).EndInit();
@@ -140,13 +133,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox picVoid;
         private System.Windows.Forms.PictureBox picRope;
         private System.Windows.Forms.PictureBox picCharR;
         private System.Windows.Forms.PictureBox picCharL;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblP1;
+        private System.Windows.Forms.Label lblP2;
     }
 }

@@ -75,6 +75,7 @@ namespace Force
             
         }
 
+        //moves the character left or right 
         private void Protect_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
@@ -85,13 +86,6 @@ namespace Force
             {
                 picChar.Left = picChar.Left + 15;
             }
-        }
-
-        private void btnOut_Click(object sender, EventArgs e)
-        {
-            frmMainMenu obj3 = new frmMainMenu();
-            obj3.Show();
-            this.Hide();
         }
     }
 }

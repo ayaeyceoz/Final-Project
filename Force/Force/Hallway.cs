@@ -17,22 +17,21 @@ namespace Force
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e) //brings back to main menu
+        private void btnmainmenu_Click(object sender, EventArgs e)
         {
-            frmMainMenu obj8 = new frmMainMenu();
-            obj8.Show();
-            this.Hide();
+                frmMainMenu obj8 = new frmMainMenu();
+                obj8.Show();
+                this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e) //brings to one player tug of war
+        private void btn1player_Click(object sender, EventArgs e)
         {
             TugOfWar obj9 = new TugOfWar();
             obj9.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn2player_Click(object sender, EventArgs e)
         {
             ToW2 obj83 = new ToW2(); //brings to two player tug of war
             obj83.Show();

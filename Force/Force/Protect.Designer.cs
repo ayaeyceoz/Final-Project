@@ -44,7 +44,6 @@
             this.picPlanet = new System.Windows.Forms.PictureBox();
             this.lbllives = new System.Windows.Forms.Label();
             this.lblDays = new System.Windows.Forms.Label();
-            this.btnOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ast1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ast9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ast8)).BeginInit();
@@ -204,26 +203,12 @@
             this.lblDays.TabIndex = 12;
             this.lblDays.Text = "Days: 0";
             // 
-            // btnOut
-            // 
-            this.btnOut.BackColor = System.Drawing.Color.Red;
-            this.btnOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.ForeColor = System.Drawing.Color.White;
-            this.btnOut.Location = new System.Drawing.Point(596, 11);
-            this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(30, 30);
-            this.btnOut.TabIndex = 13;
-            this.btnOut.Text = "X";
-            this.btnOut.UseVisualStyleBackColor = false;
-            this.btnOut.Click += new System.EventHandler(this.btnOut_Click);
-            // 
             // Protect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(641, 416);
-            this.Controls.Add(this.btnOut);
             this.Controls.Add(this.lblDays);
             this.Controls.Add(this.lbllives);
             this.Controls.Add(this.picPlanet);
@@ -272,6 +257,5 @@
         private System.Windows.Forms.PictureBox picPlanet;
         private System.Windows.Forms.Label lbllives;
         private System.Windows.Forms.Label lblDays;
-        private System.Windows.Forms.Button btnOut;
     }
 }

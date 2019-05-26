@@ -35,8 +35,8 @@
             this.picCharR = new System.Windows.Forms.PictureBox();
             this.picRope = new System.Windows.Forms.PictureBox();
             this.picVoid = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCPU = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCharL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRope)).BeginInit();
@@ -46,6 +46,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // picCharL
@@ -91,27 +92,27 @@
             this.picVoid.TabIndex = 3;
             this.picVoid.TabStop = false;
             // 
-            // label1
+            // lblCPU
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 38);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "CPU: automatic";
+            this.lblCPU.AutoSize = true;
+            this.lblCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPU.ForeColor = System.Drawing.Color.White;
+            this.lblCPU.Location = new System.Drawing.Point(26, 62);
+            this.lblCPU.Name = "lblCPU";
+            this.lblCPU.Size = new System.Drawing.Size(260, 38);
+            this.lblCPU.TabIndex = 4;
+            this.lblCPU.Text = "CPU: automatic";
             // 
-            // label2
+            // lblUser
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(467, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 38);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "You: J";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.White;
+            this.lblUser.Location = new System.Drawing.Point(467, 62);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(116, 38);
+            this.lblUser.TabIndex = 5;
+            this.lblUser.Text = "You: J";
             // 
             // TugOfWar
             // 
@@ -123,12 +124,12 @@
             this.ClientSize = new System.Drawing.Size(702, 474);
             this.Controls.Add(this.picCharR);
             this.Controls.Add(this.picCharL);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUser);
+            this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.picVoid);
             this.Controls.Add(this.picRope);
             this.Name = "TugOfWar";
-            this.Text = "TugOfWar";
+            this.Text = "Tug of War!";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TugOfWar_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.picCharL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCharR)).EndInit();
@@ -146,7 +147,7 @@
         private System.Windows.Forms.PictureBox picCharR;
         private System.Windows.Forms.PictureBox picRope;
         private System.Windows.Forms.PictureBox picVoid;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCPU;
+        private System.Windows.Forms.Label lblUser;
     }
 }

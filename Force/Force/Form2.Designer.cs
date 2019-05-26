@@ -46,7 +46,7 @@
             this.picheart3 = new System.Windows.Forms.PictureBox();
             this.picheart2 = new System.Windows.Forms.PictureBox();
             this.lblScore = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.picvil1 = new System.Windows.Forms.PictureBox();
             this.picvil2 = new System.Windows.Forms.PictureBox();
             this.picvil3 = new System.Windows.Forms.PictureBox();
@@ -234,16 +234,16 @@
             this.lblScore.TabIndex = 32;
             this.lblScore.Text = "Score: 0";
             // 
-            // label1
+            // lbltitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(65, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 29);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Welcome to Avoid Academy!";
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.ForeColor = System.Drawing.Color.White;
+            this.lbltitle.Location = new System.Drawing.Point(65, 21);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(318, 29);
+            this.lbltitle.TabIndex = 33;
+            this.lbltitle.Text = "Welcome to Avoid Academy!";
             // 
             // picvil1
             // 
@@ -360,7 +360,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(775, 481);
+            this.ClientSize = new System.Drawing.Size(795, 481);
             this.Controls.Add(this.piicvil10);
             this.Controls.Add(this.picvil9);
             this.Controls.Add(this.picvil8);
@@ -371,7 +371,7 @@
             this.Controls.Add(this.picvil3);
             this.Controls.Add(this.picvil2);
             this.Controls.Add(this.picvil1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.picheart2);
             this.Controls.Add(this.picheart3);
@@ -388,8 +388,8 @@
             this.Controls.Add(this.piclaser1);
             this.Controls.Add(this.picChar1);
             this.Name = "mgAvoid";
-            this.Text = "Form2";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mgAvoid_KeyDown);
+            this.Text = "Avoid Academy!";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.move);
             ((System.ComponentModel.ISupportInitialize)(this.picChar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclaser1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piclaser2)).EndInit();
@@ -437,7 +437,7 @@
         private System.Windows.Forms.PictureBox picheart3;
         private System.Windows.Forms.PictureBox picheart2;
         private System.Windows.Forms.Label lblScore;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.PictureBox picvil1;
         private System.Windows.Forms.PictureBox picvil2;
         private System.Windows.Forms.PictureBox picvil3;

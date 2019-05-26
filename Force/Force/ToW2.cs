@@ -16,30 +16,31 @@ namespace Force
        
         public ToW2()
         {
-            InitializeComponent();
+            InitializeComponent(); //tells the user the instructions
             MessageBox.Show("Use either the 'A' key or the 'L' key to force your enemy into the void");
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Start();
         }
    
         private void ToW2_KeyDown(object sender, KeyEventArgs e)
         {
-            Random r = new Random();
+            //a random variable was put into the code in order for there to be an element of luck
+            Random r = new Random(); 
             int move = r.Next(1, 15);
-            if (e.KeyCode == Keys.A)
+            //it will move randomally from 1 - 15 every time one of the players presses their key
+            if (e.KeyCode == Keys.A) //everytime player one presses the A key
             {
                 picCharR.Left = picCharR.Left - move;
                 picRope.Left = picRope.Left - move;
                 picCharL.Left = picCharL.Left - move;
             }
-            if (e.KeyCode == Keys.L)
+            if (e.KeyCode == Keys.L) //everytime player two presses the L key
             {
                 picCharR.Left = picCharR.Left + move;
                 picRope.Left = picRope.Left + move;
                 picCharL.Left = picCharL.Left + move;
             }
+
+            //decides if the left or right player wins based on which character intersects with the middle line
+            //takes the user back to the main menu
             if (picCharL.Bounds.IntersectsWith(picVoid.Bounds))
             {
                 MessageBox.Show("Congratulations Player 2! You forced your opponent into the void! You win!");

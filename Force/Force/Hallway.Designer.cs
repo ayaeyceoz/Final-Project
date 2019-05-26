@@ -42,7 +42,7 @@
             this.btnmainmenu.TabIndex = 0;
             this.btnmainmenu.Text = "Return to Force Freeway!";
             this.btnmainmenu.UseVisualStyleBackColor = true;
-            this.btnmainmenu.Click += new System.EventHandler(this.button1_Click);
+            this.btnmainmenu.Click += new System.EventHandler(this.btnmainmenu_Click);
             // 
             // btn1player
             // 
@@ -52,7 +52,7 @@
             this.btn1player.TabIndex = 1;
             this.btn1player.Text = "1 Player";
             this.btn1player.UseVisualStyleBackColor = true;
-            this.btn1player.Click += new System.EventHandler(this.button2_Click);
+            this.btn1player.Click += new System.EventHandler(this.btn1player_Click);
             // 
             // btn2player
             // 
@@ -62,7 +62,7 @@
             this.btn2player.TabIndex = 2;
             this.btn2player.Text = "2 Player";
             this.btn2player.UseVisualStyleBackColor = true;
-            this.btn2player.Click += new System.EventHandler(this.button3_Click);
+            this.btn2player.Click += new System.EventHandler(this.btn2player_Click);
             // 
             // Hallway
             // 

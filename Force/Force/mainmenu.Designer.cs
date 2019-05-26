@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblforcefreeway = new System.Windows.Forms.Label();
+            this.lblwelcome = new System.Windows.Forms.Label();
+            this.lblto = new System.Windows.Forms.Label();
             this.mgProtect = new System.Windows.Forms.PictureBox();
             this.mgToW = new System.Windows.Forms.PictureBox();
             this.mgMaze = new System.Windows.Forms.PictureBox();
             this.picmgAvoid = new System.Windows.Forms.PictureBox();
             this.picChar = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbltitle2 = new System.Windows.Forms.Label();
+            this.lbltitle1 = new System.Windows.Forms.Label();
+            this.lbltitle5 = new System.Windows.Forms.Label();
+            this.lbltitle6 = new System.Windows.Forms.Label();
+            this.lbltitle3 = new System.Windows.Forms.Label();
+            this.lbltitle4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.mgProtect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mgToW)).BeginInit();
@@ -52,38 +52,38 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label9
+            // lblforcefreeway
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(630, 410);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 14);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Force Freeway";
+            this.lblforcefreeway.AutoSize = true;
+            this.lblforcefreeway.BackColor = System.Drawing.Color.White;
+            this.lblforcefreeway.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblforcefreeway.Location = new System.Drawing.Point(630, 410);
+            this.lblforcefreeway.Name = "lblforcefreeway";
+            this.lblforcefreeway.Size = new System.Drawing.Size(75, 14);
+            this.lblforcefreeway.TabIndex = 29;
+            this.lblforcefreeway.Text = "Force Freeway";
             // 
-            // label7
+            // lblwelcome
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(641, 384);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 14);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Welcome";
+            this.lblwelcome.AutoSize = true;
+            this.lblwelcome.BackColor = System.Drawing.Color.White;
+            this.lblwelcome.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblwelcome.Location = new System.Drawing.Point(641, 384);
+            this.lblwelcome.Name = "lblwelcome";
+            this.lblwelcome.Size = new System.Drawing.Size(49, 14);
+            this.lblwelcome.TabIndex = 27;
+            this.lblwelcome.Text = "Welcome";
             // 
-            // label8
+            // lblto
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(659, 397);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 14);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "to";
+            this.lblto.AutoSize = true;
+            this.lblto.BackColor = System.Drawing.Color.White;
+            this.lblto.Font = new System.Drawing.Font("Comic Sans MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblto.Location = new System.Drawing.Point(659, 397);
+            this.lblto.Name = "lblto";
+            this.lblto.Size = new System.Drawing.Size(16, 14);
+            this.lblto.TabIndex = 28;
+            this.lblto.Text = "to";
             // 
             // mgProtect
             // 
@@ -132,71 +132,71 @@
             this.picChar.TabIndex = 15;
             this.picChar.TabStop = false;
             // 
-            // label2
+            // lbltitle2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(88, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 19);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Maze Mansion";
+            this.lbltitle2.AutoSize = true;
+            this.lbltitle2.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle2.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle2.Location = new System.Drawing.Point(88, 113);
+            this.lbltitle2.Name = "lbltitle2";
+            this.lbltitle2.Size = new System.Drawing.Size(98, 19);
+            this.lbltitle2.TabIndex = 19;
+            this.lbltitle2.Text = "Maze Mansion";
             // 
-            // label1
+            // lbltitle1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(261, 189);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 19);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Avoid Academy";
+            this.lbltitle1.AutoSize = true;
+            this.lbltitle1.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle1.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle1.Location = new System.Drawing.Point(261, 189);
+            this.lbltitle1.Name = "lbltitle1";
+            this.lbltitle1.Size = new System.Drawing.Size(105, 19);
+            this.lbltitle1.TabIndex = 17;
+            this.lbltitle1.Text = "Avoid Academy";
             // 
-            // label5
+            // lbltitle5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1, 336);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 19);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Planet Protection";
+            this.lbltitle5.AutoSize = true;
+            this.lbltitle5.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle5.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle5.Location = new System.Drawing.Point(1, 336);
+            this.lbltitle5.Name = "lbltitle5";
+            this.lbltitle5.Size = new System.Drawing.Size(121, 19);
+            this.lbltitle5.TabIndex = 23;
+            this.lbltitle5.Text = "Planet Protection";
             // 
-            // label6
+            // lbltitle6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 354);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 19);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Pavilion";
+            this.lbltitle6.AutoSize = true;
+            this.lbltitle6.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle6.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle6.Location = new System.Drawing.Point(32, 354);
+            this.lbltitle6.Name = "lbltitle6";
+            this.lbltitle6.Size = new System.Drawing.Size(56, 19);
+            this.lbltitle6.TabIndex = 24;
+            this.lbltitle6.Text = "Pavilion";
             // 
-            // label3
+            // lbltitle3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(466, 430);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 19);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Tug of War";
+            this.lbltitle3.AutoSize = true;
+            this.lbltitle3.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle3.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle3.Location = new System.Drawing.Point(466, 430);
+            this.lbltitle3.Name = "lbltitle3";
+            this.lbltitle3.Size = new System.Drawing.Size(83, 19);
+            this.lbltitle3.TabIndex = 21;
+            this.lbltitle3.Text = "Tug of War";
             // 
-            // label4
+            // lbltitle4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(465, 451);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 19);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Townhouse";
+            this.lbltitle4.AutoSize = true;
+            this.lbltitle4.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle4.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle4.Location = new System.Drawing.Point(465, 451);
+            this.lbltitle4.Name = "lbltitle4";
+            this.lbltitle4.Size = new System.Drawing.Size(79, 19);
+            this.lbltitle4.TabIndex = 22;
+            this.lbltitle4.Text = "Townhouse";
             // 
             // pictureBox1
             // 
@@ -216,23 +216,23 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(722, 470);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblforcefreeway);
+            this.Controls.Add(this.lblwelcome);
+            this.Controls.Add(this.lblto);
             this.Controls.Add(this.mgProtect);
             this.Controls.Add(this.mgToW);
             this.Controls.Add(this.mgMaze);
             this.Controls.Add(this.picmgAvoid);
             this.Controls.Add(this.picChar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbltitle2);
+            this.Controls.Add(this.lbltitle1);
+            this.Controls.Add(this.lbltitle5);
+            this.Controls.Add(this.lbltitle6);
+            this.Controls.Add(this.lbltitle3);
+            this.Controls.Add(this.lbltitle4);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmMainMenu";
-            this.Text = "mainmenu";
+            this.Text = "Force Freeway! By: Aya and Amelia";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMainMenu_KeyDown_1);
             ((System.ComponentModel.ISupportInitialize)(this.mgProtect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mgToW)).EndInit();
@@ -247,20 +247,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblforcefreeway;
+        private System.Windows.Forms.Label lblwelcome;
+        private System.Windows.Forms.Label lblto;
         private System.Windows.Forms.PictureBox mgProtect;
         private System.Windows.Forms.PictureBox mgToW;
         private System.Windows.Forms.PictureBox mgMaze;
         private System.Windows.Forms.PictureBox picmgAvoid;
         private System.Windows.Forms.PictureBox picChar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbltitle2;
+        private System.Windows.Forms.Label lbltitle1;
+        private System.Windows.Forms.Label lbltitle5;
+        private System.Windows.Forms.Label lbltitle6;
+        private System.Windows.Forms.Label lbltitle3;
+        private System.Windows.Forms.Label lbltitle4;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

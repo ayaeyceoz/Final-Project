@@ -25,56 +25,6 @@ namespace Force
             InitializeComponent();
         }
 
-        private void frmMainMenu_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Left) //moves the character left 
-            {
-                picChar.Left = picChar.Left - 10;
-            }
-            if (e.KeyCode == Keys.Right) //moves the character right
-            {
-                picChar.Left = picChar.Left + 10;
-            }
-            if (e.KeyCode == Keys.Up) //moves the character up
-            {
-                picChar.Top = picChar.Top - 10;
-            }
-            if (e.KeyCode == Keys.Down) //moves the character down
-            {
-                picChar.Top = picChar.Top + 10;
-            }
-
-            //visit different minigames (go to different forms)
-            //if the character's bounds intersect with another picturebox (character goes to the building),
-            //it will close out of the current form and open the form related to that picturebox (or building)
-
-            if (picChar.Bounds.IntersectsWith(picmgAvoid.Bounds))
-            {
-                mgAvoid obj1 = new mgAvoid(); //goes to Minigame Avoid Academy
-                obj1.Show(); //mg stands for minigame
-                this.Hide();
-            }            if (picChar.Bounds.IntersectsWith(mgMaze.Bounds))
-            {
-                Maze obj2 = new Maze(); //goes to Maze Mansion
-                obj2.Show();
-                this.Hide();
-            }
-            if (picChar.Bounds.IntersectsWith(mgToW.Bounds))
-            {
-                Hallway obj5 = new Hallway(); //goes to the Hallway for the two different Tug of War games
-                obj5.Show();
-                this.Hide();
-            }
-            if (picChar.Bounds.IntersectsWith(mgProtect.Bounds))
-            {
-                Protect obj52 = new Protect(); //goes to Planet Protection Pavilion 
-                obj52.Show();
-                this.Hide();
-            }
-
-
-        }
-
         private void frmMainMenu_KeyDown_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left) //moves the character left 
